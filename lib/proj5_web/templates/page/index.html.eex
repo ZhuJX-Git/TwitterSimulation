@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--    设置预览效果-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--    导入css-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <title>Home</title>
+</head>
+<body>
+    <nav class="ui inverted attached segment">
+    <div class="ui container">
+
+        <div class="ui inverted secondary stackable menu">
+
+            <h2 class="ui teal header item">Twitter</h2>
+            <button id="deleteAccount" class="ui teal button">Delete account</button>
+            <button id="logOff" class="ui teal button">Log off</button>
+        </div>
+        <div>
+          
+        <div class="ui teal segment">
+            <div class="ui segment">
+                <h3>Please Input your username and password</h3>
+                User: <input id="username" type="text" placeholder="username" ></input></br></br>
+                Password: <input id="password" type="password" placeholder="password" ></input></br></br>
+            </div>
+            <div class="ui teal segment">
+
+                <button class="ui teal large" id="login">Login</button></br></br>
+                <button class="ui teal large" id="signUp">Register</button>
+            </div>
+        </div> 
+
+        </div>
+    </div>
+</nav>
+
+    <div class="ui segment" >
+        <div class="ui segment" >
+            <div class="ui segment" >
+            
+                Follow: <input id="followContent" placeholder="Enter username to follow"></input><button id="follow" class="ui black button">Follow</button>
+                Query tag:<input id="queryTagContent" placeholder="Insert Hashtag"></input><button id="queryTag" class="ui black button">Query</button></br></br>
+                Query mention:<button id="queryMention" class="ui black button">Query who Mentioned me</button></br></br>
+                Query subscribe:<button id="querySubscribe" class="ui black button">Query I Subscribe who</button></br></br>
+                        
+            </div>
+            </br>
+            Query Results: </br>
+            <div id="query">
+
+            </div>
+
+        </div>
+        <div class="ui segment" >
+        <h2>Hey! Do you want to send a tweet?</h2>
+            <div class="ui segment">
+                <input id="tweetContent" placeholder="Tweet content here"></input>
+                <input id="tagsContent" placeholder="Tags here"></input>
+                <input id="mentionsContent" placeholder="Mentions here"></input>
+                <label id ="tweeted"></label>
+                <button id="tweet" class="ui black button">Send Tweet</button></br>
+                ReTweet:</br><input id="reTweetContent" placeholder="Enter Tweet ID"></input>
+                <button id="reTweet" class="ui black button">ReTweet</button> 
+                
+            </div>
+            </br>
+            Live Tweet:</br>
+            <div id="live">        
+                    
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer>
+
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+</html>
